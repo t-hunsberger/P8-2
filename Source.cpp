@@ -26,11 +26,13 @@ int countWords(string str) {
 }
 
 int main(){
-	string testString1 = "Hello, World";
-	string testString2 = "This is a test string.";
-	string testString3 = "    Spaces before and after    ";
-
-	cout << "Number of words in testString1: " << countWords(testString1) << endl;
-	cout << "Number of words in testString2: " << countWords(testString2) << endl;
-	cout << "Number of words in testString3: " << countWords(testString3) << endl;
+	string input;
+	while (true) {
+		cout << "Enter a string or Q to quit: ";
+		getline(cin, input);
+		if (input == "Q" || input == "q");
+		int numWords = countWords(input);
+		cout << "Word count: " << numWords << endl;
+	}
+	return 0;
 }
